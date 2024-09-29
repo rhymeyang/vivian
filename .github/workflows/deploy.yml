@@ -1,0 +1,41 @@
+name: docs
+
+on:
+  # Trigger deployment on push to main branch
+  push:
+    branches: [main]
+  # Allow manual deployment trigger
+  workflow_dispatch:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - uses: actions/checkout@v4
+        with:
+          # Fetch full commit history for git-related operations
+          fetch-depth: 0
+
+      # Setup Node.js environment (specify Node.js 20)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20  # Set Node.js version 20
+          cache: 'npm'
+
+      # Install dependencies using npm
+      - name: Install dependencies
+        run: npm install
+
+      # Build VuePress site using npm
+      - name: Build VuePress site
+        run: npm run docs:build
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vuepress/dist  # Path to the built site

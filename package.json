@@ -1,0 +1,20 @@
+{
+  "name": "recipe-collection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vicky",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.15",
+    "@vuepress/theme-default": "^2.0.0-rc.49",
+    "sass": "^1.79.3",
+    "sass-loader": "^16.0.2",
+    "vuepress": "^2.0.0-rc.15"
+  }
+}
