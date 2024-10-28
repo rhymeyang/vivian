@@ -18,15 +18,27 @@ export default defineUserConfig({
         },
         {
           text: '基础信息',
-          collapsable: true,
+          collapsable: false,
           children: [
             { text: "交易基础", link: '/Info/01_base.md' },
             { text: "ETF", link: '/Info/02_ETF.md' },
+            { text: "名人观点", link: '/Info/03_Points.md' },
+            { text: "Andy观点", link: '/Info/04_Points.md' },
+
           ],
         },
         {
+          text: '指标',
+          collapsable: false,
+          children: [
+            { text: "Trading View", link: '/Index/Trading.md' },
+
+          ],
+        },
+
+        {
           text: '2024',
-          collapsable: true,
+          collapsable: false,
           children: [
             { text: "0928", link: '/Daily/2004_09_28.md' },
 
