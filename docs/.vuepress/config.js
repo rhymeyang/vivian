@@ -32,6 +32,14 @@ export default defineUserConfig({
           ],
         },
         {
+          text: 'Info',
+          collapsable: false,
+          children: [
+            { text: "Bond", link: '/Stock/bond.md' },
+
+          ],
+        },
+        {
           text: '指标',
           collapsable: false,
           children: [
@@ -39,7 +47,6 @@ export default defineUserConfig({
 
           ],
         },
-
         {
           text: '2024',
           collapsable: false,
