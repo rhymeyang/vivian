@@ -186,3 +186,20 @@
 | 半导体 | 1 倍做多 | SMH      | 0.35%  | VanEck Vectors Semiconductor ETF            | 追踪美国半导体行业 | 台积电、英伟达（约 25%） |
 | 半导体 | 3 倍做多 | SOXL     | 0.95%  | Direxion Daily Semiconductor Bull 3X Shares | 3 倍做多半导体行业 | 与 SMH 相同              |
 | 半导体 | 3 倍做空 | SOXS     | 0.95%  | Direxion Daily Semiconductor Bear 3X Shares | 3 倍做空半导体行业 | 与 SMH 相同              |
+
+###
+
++ SPY
+  + UPRO/SPXL
+  + SPXU/SPXS
++ QQQ
+  + TQQQ
+  + SQQQ
++ SMH
+  + SOXL
+  + SOXS
++ IWM
+  + TNA
+  + TZA
++ UNG
+  + BOLL

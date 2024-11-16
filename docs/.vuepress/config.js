@@ -22,12 +22,13 @@ export default defineUserConfig({
           children: [
             { text: "交易基础", link: '/Info/01_base.md' },
             { text: "Canada", link: '/Info/01_base_ca.md' },
-            { text: "美股常识", link: '/Info/05_Points.md' },
+            { text: "美股常识", link: '/Info/05_Base_Points.md.md' },
             { text: "ETF", link: '/Info/01_ETFs.md' },
+            { text: "康波周期", link: '/Info/02_circle.md' },
             { text: "Tools", link: '/Info/01_Tools.md' },
             { text: "资料查询", link: '/Info/02_info.md' },
             { text: "名人观点", link: '/Info/03_Points.md' },
-            { text: "Andy观点", link: '/Info/04_Points.md' },
+            { text: "Andy观点", link: '/Info/04_A_Points.md' },
 
           ],
         },
@@ -51,7 +52,8 @@ export default defineUserConfig({
           text: '2024',
           collapsable: false,
           children: [
-            { text: "0928", link: '/Daily/2004_09_28.md' },
+            { text: "08-09", link: '/Daily/2004_08.md' },
+            { text: "0928", link: '/Daily/2024_09_28.md' },
 
           ],
         }
