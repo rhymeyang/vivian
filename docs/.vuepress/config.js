@@ -6,7 +6,7 @@ export default defineUserConfig({
   bundler: viteBundler(),
   base: '/vivian/',
   theme: defaultTheme({
-    logo: '/images/logo.png',
+    logo: '/images/leaf.svg',
     contributors: false,
     navbar: [
       {
@@ -35,7 +35,7 @@ export default defineUserConfig({
           children: [
             { text: "交易基础", link: '/Info/01_base.md' },
             { text: "Canada", link: '/Info/01_base_ca.md' },
-            { text: "美股常识", link: '/Info/05_Base_Points.md.md' },
+            { text: "美股常识", link: '/Info/05_Base_Points.md' },
             { text: "ETF", link: '/Info/01_ETFs.md' },
             { text: "康波周期", link: '/Info/02_circle.md' },
             { text: "Tools", link: '/Info/01_Tools.md' },
@@ -65,7 +65,7 @@ export default defineUserConfig({
           text: '2024',
           collapsable: false,
           children: [
-            { text: "08-09", link: '/Daily/2004_08.md' },
+            { text: "0809", link: '/Daily/2024_08.md' },
             { text: "0928", link: '/Daily/2024_09_28.md' },
 
           ],
