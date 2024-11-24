@@ -10,8 +10,8 @@ export default defineUserConfig({
     contributors: false,
     navbar: [
       {
-        text: 'Home',
-        link: '/',
+        text: 'Vivian',
+        link: 'https://rhymeyang.github.io/vivian/',
       },
       {
         text: 'Recipe',
