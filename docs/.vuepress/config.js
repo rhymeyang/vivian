@@ -7,15 +7,27 @@ export default defineUserConfig({
   base: '/vivian/',
   theme: defaultTheme({
     logo: '/vivian/images/logo.png',
-    navbar: false,
+    navbar: [
+      {
+        text: 'Home',
+        link: '/',
+      },
+      {
+        text: 'Recipe',
+        link: 'https://rhymeyang.github.io/recipe/',
+      },
+      {
+        text: 'English',
+        link: 'https://rhymeyang.github.io/english-starter/',
+      },
+      {
+        text: 'Semester 3',
+        link: 'https://rhymeyang.github.io/Se/',
+      }
+    ],
+
     sidebar: {
       '/': [
-        {
-          text: 'Main Pages',
-          children: [
-            { text: "Vivian's Page", link: '/' },
-          ],
-        },
         {
           text: '基础信息',
           collapsable: false,
