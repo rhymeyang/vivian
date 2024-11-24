@@ -6,7 +6,8 @@ export default defineUserConfig({
   bundler: viteBundler(),
   base: '/vivian/',
   theme: defaultTheme({
-    logo: '/vivian/images/logo.png',
+    logo: '/images/logo.png',
+    contributors: false,
     navbar: [
       {
         text: 'Home',
