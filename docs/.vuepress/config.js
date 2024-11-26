@@ -11,19 +11,23 @@ export default defineUserConfig({
     navbar: [
       {
         text: 'Vivian',
-        link: 'https://rhymeyang.github.io/vivian/',
+        link: '/../vivian/',
       },
       {
         text: 'Recipe',
-        link: 'https://rhymeyang.github.io/recipe/',
+        link: '/../recipe/',
+      },
+      {
+        text: 'Tools',
+        link: '/../tools/',
       },
       {
         text: 'English',
-        link: 'https://rhymeyang.github.io/english-starter/',
+        link: '/../english-starter/',
       },
       {
         text: 'Semester 3',
-        link: 'https://rhymeyang.github.io/Se/',
+        link: '/../Se/',
       }
     ],
 
