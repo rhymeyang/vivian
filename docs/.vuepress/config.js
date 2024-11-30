@@ -62,7 +62,7 @@ export default defineUserConfig({
           collapsable: false,
           children: [
             { text: "Trading View", link: '/Index/Trading.md' },
-
+            { text: "RSI", link: '/Index/RSI.md' },
           ],
         },
         {
@@ -72,6 +72,17 @@ export default defineUserConfig({
             { text: "0809", link: '/Daily/2024_08.md' },
             { text: "0928", link: '/Daily/2024_09_28.md' },
 
+          ],
+        },
+        {
+          text: '个股',
+          collapsable: false,
+          children: [
+            { text: "债券", link: '/Stock/bond.md' },
+            { text: "国债", link: '/Stock/Sgov.md' },
+
+            { text: "黄金", link: '/Stock/gold.md' },
+            { text: "白银", link: '/Stock/Sliver.md' },
           ],
         }
       ]
