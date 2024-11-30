@@ -89,6 +89,14 @@ export default defineUserConfig({
             { text: "美国 2024", link: '/RealEstate/us_2024.md' },
             { text: "加拿大 2024", link: '/RealEstate/ca_2024.md' },
           ],
+        },
+        {
+          text: '付鹏',
+          collapsable: false,
+          children: [
+            { text: "HSBC 付鹏演讲", link: '/fp/20241124.md' },
+
+          ],
         }
       ]
     },
