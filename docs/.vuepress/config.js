@@ -50,11 +50,11 @@ export default defineUserConfig({
           ],
         },
         {
-          text: 'Info',
+          text: '债券',
           collapsable: false,
           children: [
-            { text: "Bond", link: '/Stock/bond.md' },
-
+            { text: "Bond", link: '/Bond/bond.md' },
+            { text: "ETF", link: '/Bond/sgov.md' },
           ],
         },
         {
@@ -78,11 +78,16 @@ export default defineUserConfig({
           text: '个股',
           collapsable: false,
           children: [
-            { text: "债券", link: '/Stock/bond.md' },
-            { text: "国债", link: '/Stock/Sgov.md' },
-
             { text: "黄金", link: '/Stock/gold.md' },
             { text: "白银", link: '/Stock/Sliver.md' },
+          ],
+        },
+        {
+          text: '房产',
+          collapsable: false,
+          children: [
+            { text: "美国 2024", link: '/RealEstate/us_2024.md' },
+            { text: "加拿大 2024", link: '/RealEstate/ca_2024.md' },
           ],
         }
       ]
