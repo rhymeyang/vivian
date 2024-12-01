@@ -7,14 +7,18 @@
 
 ## ETF informaton
 
-1. https://www.etfrc.com/
-2. https://etfdb.com/
+1. [etfrc](https://www.etfrc.com/)
+2. [etfdb](https://etfdb.com/)
 
 ## AI 分析
 
 - [NVDA](https://www.perplexity.ai/finance/NVDA)
 
 > 换股票将链接后面股票代码换成想查询的代码
+
+## Fear & Greed Index
+
+- [CNN Fear & Greed Index](https://edition.cnn.com/markets/fear-and-greed)
 
 ## China
 
