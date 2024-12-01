@@ -83,6 +83,14 @@ export default defineUserConfig({
           ],
         },
         {
+          text: '加密货币',
+          collapsable: false,
+          children: [
+            { text: "BTC", link: '/Coin/2024.md' },
+
+          ],
+        },
+        {
           text: '房产',
           collapsable: false,
           children: [
