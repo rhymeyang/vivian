@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app-CVaYDMpc.js";const c={};function _(r,o){return a(),t("div")}const l=e(c,[["render",_],["__file","ca_2024.html.vue"]]),n=JSON.parse('{"path":"/RealEstate/ca_2024.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1733003206000},"filePathRelative":"RealEstate/ca_2024.md"}');export{l as comp,n as data};
