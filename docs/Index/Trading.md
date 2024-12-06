@@ -2,17 +2,20 @@
 
 ```shell
 //@version=5
-indicator("Custom MACD Long-R", overlay=false)
+indicator("MACD Long-R", shorttitle="MACD-V", overlay=false, timeframe="", timeframe_gaps=true)
 
+// 13,21 - 55, 89 - 144, 169
 // Input variables for the first MACD
-fastLength1 = input.int(55, "Fast Length 1", minval=1)
-slowLength1 = input.int(89, "Slow Length 1", minval=1)
-signalSmoothing1 = input.int(9, "Signal Smoothing 1", minval=1)
+fastLength1 = input.int(144, "Fast Length 1", minval=1)
+slowLength1 = input.int(169, "Slow Length 1", minval=1)
+//input.int(9, "Signal Smoothing 1", minval=1)
+signalSmoothing1 = 9 
 
 // Input variables for the second MACD
 fastLength2 = input.int(13, "Fast Length 2", minval=1)
 slowLength2 = input.int(21, "Slow Length 2", minval=1)
-signalSmoothing2 = input.int(9, "Signal Smoothing 2", minval=1)
+// input.int(9, "Signal Smoothing 2", minval=1)
+signalSmoothing2 = 9
 
 // Calculate MACD histograms
 macdLine1 = ta.ema(close, fastLength1) - ta.ema(close, slowLength1)
@@ -29,6 +32,106 @@ plot(histogram2, title="MACD Short", color=color.new(color.gray, 80), style=plot
 plot(histogram2, color=color.lime, title="MACD Short")
 plot(histogram1, color=color.red, title="MACD Long")
 plot(0, color=color.gray, title="zero")
+```
+## EMA - Vegas
+```shell
+//@version=5
+indicator(title="EMA Vegas", shorttitle="EMA-Vegas", overlay=true, timeframe="", timeframe_gaps=true)
+
+// 13, 21 - 55, 89 - 144, 169
+length1 = input.int(13, minval=1)
+length2 = input.int(21, minval=1)
+
+length3 = input.int(55, minval=1)
+length4 = input.int(89, minval=1)
+
+length5 = input.int(144, minval=1)
+length6 = input.int(169, minval=1)
+
+
+ema1 = ta.ema(close, length1)
+ema2 = ta.ema(close, length2)
+ema3 = ta.ema(close, length3)
+ema4 = ta.ema(close, length4)
+ema5 = ta.ema(close, length5)
+ema6 = ta.ema(close, length6)
+
+
+show_ema1 = input(true, title="Show EMA 13")
+show_ema2 = input(true, title="Show EMA 21")
+
+show_ema3 = input(true, title="Show EMA 55")
+show_ema4 = input(true, title="Show EMA 89")
+
+show_ema5 = input(true, title="Show EMA 144")
+show_ema6 = input(true, title="Show EMA 169")
+
+color1 = color.lime
+color2 = color.red
+color3 = color.maroon
+color4 = color.green
+color5 = color.blue
+color6 = color.purple
+
+plot(show_ema1 ? ema1 : na, color=color1, title="EMA 13")
+plot(show_ema2 ? ema2 : na, color=color2, title="EMA 21")
+
+plot(show_ema3 ? ema3 : na, color=color3, title="EMA 55")
+plot(show_ema4 ? ema4 : na, color=color4, title="EMA 89")
+
+plot(show_ema5 ? ema5 : na, color=color5, title="EMA 144")
+plot(show_ema6 ? ema6 : na, color=color6, title="EMA 169")
+```
+
+
+## MA - Vegas
+```shell
+//@version=5
+indicator(title="MA Vegas", shorttitle="MA-Vegas", overlay=true, timeframe="", timeframe_gaps=true)
+
+// 13, 21 - 55, 89 - 144, 169
+length1 = input.int(13, minval=1)
+length2 = input.int(21, minval=1)
+
+length3 = input.int(55, minval=1)
+length4 = input.int(89, minval=1)
+
+length5 = input.int(144, minval=1)
+length6 = input.int(169, minval=1)
+
+
+sma1 = ta.sma(close, length1)
+sma2 = ta.sma(close, length2)
+sma3 = ta.sma(close, length3)
+sma4 = ta.sma(close, length4)
+sma5 = ta.sma(close, length5)
+sma6 = ta.sma(close, length6)
+
+
+show_sma1 = input(true, title="Show SMA 13")
+show_sma2 = input(true, title="Show SMA 21")
+
+show_sma3 = input(true, title="Show SMA 55")
+show_sma4 = input(true, title="Show SMA 89")
+
+show_sma5 = input(true, title="Show SMA 144")
+show_sma6 = input(true, title="Show SMA 169")
+
+color1 = color.lime
+color2 = color.red
+color3 = color.maroon
+color4 = color.green
+color5 = color.blue
+color6 = color.purple
+
+plot(show_sma1 ? sma1 : na, color=color1, title="MA 13")
+plot(show_sma2 ? sma2 : na, color=color2, title="MA 21")
+
+plot(show_sma3 ? sma3 : na, color=color3, title="MA 55")
+plot(show_sma4 ? sma4 : na, color=color4, title="MA 89")
+
+plot(show_sma5 ? sma5 : na, color=color5, title="MA 144")
+plot(show_sma6 ? sma6 : na, color=color6, title="MA 169")
 ```
 
 ## EMA

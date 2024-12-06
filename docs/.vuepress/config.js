@@ -99,6 +99,14 @@ export default defineUserConfig({
           ],
         },
         {
+          text: 'Cat',
+          collapsable: false,
+          children: [
+            { text: "2024", link: '/Cat/2024.md' },
+
+          ],
+        },
+        {
           text: '付鹏',
           collapsable: false,
           children: [
