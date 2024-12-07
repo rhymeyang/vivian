@@ -102,7 +102,9 @@ export default defineUserConfig({
           text: 'Cat',
           collapsable: false,
           children: [
-            { text: "2024", link: '/Cat/2024.md' },
+            { text: "2024 10", link: '/Cat/2024_10.md' },
+            { text: "2024 11", link: '/Cat/2024_11.md' },
+            { text: "2024 12", link: '/Cat/2024_12.md' },
 
           ],
         },
