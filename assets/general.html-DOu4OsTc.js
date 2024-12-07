@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app-4S-99WD8.js";const r={};function n(c,l){return a(),t("div")}const o=e(r,[["render",n],["__file","general.html.vue"]]),s=JSON.parse('{"path":"/TradingView/general.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1730737453000},"filePathRelative":"TradingView/general.md"}');export{o as comp,s as data};
